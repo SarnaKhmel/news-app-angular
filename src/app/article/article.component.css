@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 0.5em 0;
+}
+
+.article {
+  width: 300px;
+  height: 60vh;
+  background-color: var(--blue-2);
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px var(--shadow-dark);
+}
+
+.upper-data {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 40%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.lower-data {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 60%;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 1em;
+}
+
+.article-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1em;
+}
+
+.upper-data img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+}
+
+.article-data {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--shadow-dark);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.title {
+  color: var(--white);
+  text-align: center;
+  font-size: 1.2em;
+  color: var(--white);
+  font-size: 1em;
+  text-align: center;
+  font-weight: 400;
+  height: 20px;
+  overflow: hidden;
+}
+
+.author {
+  color: var(--white);
+  font-size: 1em;
+  text-align: center;
+  font-weight: 600;
+  height: 20px;
+  overflow: hidden;
+}
+
+.publish {
+  color: var(--white);
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.description {
+  color: var(--white);
+  font-size: 1em;
+  text-align: center;
+  font-weight: 400;
+  text-overflow: ellipsis;
+}
+
+.to-source a {
+  color: var(--white);
+  text-decoration: none;
+  background-color: var(--shadow-dark);
+  border-radius: 10px;
+  padding: 5px 5px;
+  font-size: 1.5em;
+  text-align: center;
+}
